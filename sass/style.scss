@@ -1,0 +1,253 @@
+@import 'colors';
+@import 'fonts';
+@import 'extends';
+@import 'mixins';
+@import 'sections';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color de fondo*/
+.bg-principal {
+    background-color: $backgroun-body;
+}
+
+/* Banner principal*/
+#banner-header {
+    background-color: $backgroun-body;
+    @extend %box-banner;
+
+    img {
+        @extend %box-banner;
+        @include position-title;
+        font-family: $font-family-title;
+        color: $color-title;
+    }
+
+    .main-title {
+        @extend %box-margin-title;
+        @include position-title;
+        background-color: $backgroun-menu-title;
+
+        h1 {
+            font-size: $font-size-title;
+            color: $color-title;
+            font-family: $font-family-title;
+        }
+    }
+}
+
+/* Menu */
+#main-menu {
+    @include position-menu;
+
+    img {
+        @extend %box-title-logo;
+    }
+
+    .bg-menu {
+        background-color: $backgroun-menu-title;
+    }
+
+    .color-menu {
+        background-color: $backgroun-menu-title;
+
+        a {
+            color: $color-title;
+            border-bottom: $border-submenu;
+
+            &:hover {
+                @include hover-box-title;
+            }
+        }
+    }
+
+    a {
+        font-weight: $font-weight-menu;
+    }
+}
+
+/* Subtitulos*/
+#title-styc,
+#title-home {
+    @extend %box-margin-title;
+    @include title-sticky;
+    @include flexbox-center;
+    background-color: $background-color-title;
+
+    h2 {
+        color: $color-title;
+        font-size: $font-size-title;
+    }
+}
+
+/* Cajas */
+.boxes {
+    @extend %boxes-top;
+    
+    .box {
+        border: $border-box;
+        align-content: center;
+    }
+
+    img {
+        @extend %box-boxes-img;
+        @include img-box;
+
+        &:hover {
+            @include hover-img;
+        }
+    }
+
+    h3 {
+        @extend %box-title-h3;
+        background-color: $backgroun-menu-title;
+
+        a {
+            @include flexbox-center;
+            text-decoration: none;
+            font-family: $font-family-title-h3;
+            color: $color-title;
+
+            &:hover {
+                @include hover-box-title;
+            }
+        }
+    }
+}
+
+/* Pie de Pagina*/
+footer {
+    @extend %box-footer;
+    background-color: $backgroun-menu-title;
+
+    a {
+        color: $color-title;
+    }
+
+    address {
+        color: $color-title;
+
+        p {
+            height: 10px;
+        }
+    }
+
+    .footer-icon {
+        padding-right: 5px;
+    }
+}
+
+/*Medias Query mobiles*/
+@media only screen and (max-width: 400px) {
+     
+    #banner-header img {
+        height: 435px;
+    }
+
+    .main-menu {
+        margin-top: 50px;
+    }
+    
+     /* Subtitulos*/
+  #title-styc h2,
+  #title-home h2 {
+      font-size: $font-size-title-mobile;
+      margin-top: 10px;
+    }
+
+.box {
+    h3 {
+        font-size: $font-size-title-mobile; 
+    }
+}
+
+.section-title {
+    height: 2.5rem;
+    h1 {
+    font-size: $font-size-section;
+    } 
+}
+
+.contact-maps {
+    margin-top: 30px;
+}
+}
+
+/*Medias Query Tablets */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    #banner-header {
+        height: auto;
+
+        .main-title {
+            h1 {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            height: 220px;
+        }
+ }
+
+  
+/* Subtitulos*/
+#title-styc, #title-home {
+    position: relative;
+    top: 0;
+
+    h2 {
+        font-size: $font-size-title-tablet;
+        height: 30px; 
+    }
+}
+
+.box { 
+    img {
+        height: 250px;
+    }
+     h3 {
+        font-size: $font-size-subtitles; 
+    }
+}
+
+.section-title {
+    height: 2.5rem;
+    h1 {
+    font-size: $font-size-section;
+    } 
+}
+
+.contact-maps {
+    margin-top: 30px;
+}
+
+footer {
+      h4, a, p {
+            font-size: 80%;
+        }
+}
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 961px) {
+    #banner-header {
+        height: auto;
+        .main-title {
+            h1 {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            height: 400px;
+        }
+ }
+  
+.contact-maps {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+}

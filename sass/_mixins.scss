@@ -1,0 +1,69 @@
+@mixin position-menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@mixin title-sticky {
+    position: sticky;
+    top: 60px;
+    z-index: 50;
+}
+
+@mixin position-title {
+    position: relative;
+    text-align: center;
+}
+
+
+@mixin hover-img {
+    transform: scale(1.1);
+    transition: all 350ms;
+}
+
+@mixin img-box {
+    transition: all 350ms;
+}
+
+@mixin hover-box-title {
+    background: $hover-color-title-h2;
+    transition: all 350ms;
+}
+
+@mixin seccion-title {
+    position: fixed;
+    text-align: center;
+    z-index: 30;
+    font-size: $font-size-title;
+    font-family: $font-family-h2;
+    background-color: $background-color-title;
+}
+
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*secciones*/
+@mixin sections-title ($background-sections) {
+    background-color: $background-sections;
+    color: $color-title;
+    font-family: $font-family-title-section;
+    font-size: $font-size-title;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    z-index: 30;
+}

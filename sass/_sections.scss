@@ -1,0 +1,43 @@
+.section-title {
+    @include sections-title ($background-sections);
+}
+
+.boxes-section {
+    @extend %box-margin-top;
+    @include flex-boxes;
+
+    img {
+        @extend %box-secction-img;
+        @include img-box;
+
+        &:hover {
+            @include hover-img;
+        }
+    }
+}
+
+.boxes-section2 {
+    @extend %box-margins-top;
+    @include flex-boxes;
+
+    img {
+        @extend %box-secction-img;
+        @include img-box;
+
+        &:hover {
+            @include hover-img;
+        }
+    }
+}
+
+/* Seccion Nosotros*/
+
+.section-nosotros {
+    margin-top: 20px;
+}
+
+/* Seccion Contactos*/
+
+.form-contacto {
+    margin-top: 20px;
+}
