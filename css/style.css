@@ -263,11 +263,13 @@ footer .footer-icon {
   }
 
   /* Subtitulos*/
-  #title-styc, #title-home {
+  #title-styc,
+#title-home {
     position: relative;
     top: 0;
   }
-  #title-styc h2, #title-home h2 {
+  #title-styc h2,
+#title-home h2 {
     font-size: 2rem;
     height: 30px;
   }
@@ -290,7 +292,9 @@ footer .footer-icon {
     margin-top: 30px;
   }
 
-  footer h4, footer a, footer p {
+  footer h4,
+footer a,
+footer p {
     font-size: 80%;
   }
 }
