@@ -19,8 +19,9 @@
 <body class="bg-principal">
     <!--Inicio del area de encabezado-->
     <!--Menu-->
-    <div id="main-menu"" >
+    <header id="main-menu">
         <nav class=" navbar navbar-expand-lg navbar-dark bg-menu">
+            <div class="container">
         <a class="logo" href="index.html"><img src="img/logo.png" alt="Oliva Pastelería"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +38,7 @@
                         Productos</a>
                     <div class="color-menu dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="panaderia.html">Panaderia</a>
-                        <a class="dropdown-item" href="pasteleria.html">Pasteleria</a>
+                        <a class="dropdown-item active bg-secondary" href="pasteleria.html">Pasteleria</a>
                         <a class="dropdown-item" href="postres.html">Postres</a>
                     </div>
                 </li>
@@ -58,6 +59,7 @@
         </div>
         </nav>
     </div>
+</header>
     <!--Fin Menu-->
 
     <!--Cuerpo de la pagina-->
@@ -67,7 +69,7 @@
 
     <!--Inicio del contenedor-->
     <section>
-        <div class="boxes-section">
+        <div class="container boxes-section">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                    <a href="#"><img src="img/past-img/01.jpg" alt="Tortas hechas con amor"></a>
@@ -106,16 +108,14 @@
                     <a href="#" class="btn btn-primary">Ver receta</a>
                 </div>
             </div>
-        </div>
+        
 
-
-        <div class="boxes-section2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <a href="#"><img src="img/past-img/05.jpg" alt="Pavlova clásica y deliciosa"></a>
                     <h5 class="card-title">Pavlova</h5>
                     <p class="card-text">Delcioso postre elaborado con merengue y frutos rojos.</p>
-                    <a href="#" class="btn btn-primary">Ver receta</a>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">Ver receta</a>
                 </div>
             </div>
 
@@ -124,7 +124,7 @@
                     <a href="#"><img src="img/past-img/06.jpg" alt="Merengue o suspiro"></a>
                     <h5 class="card-title">Merengue</h5>
                     <p class="card-text">Un delicioso merengue con las frutas que tu elijas.</p>
-                    <a href="#" class="btn btn-primary">Ver receta</a>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">Ver receta</a>
                 </div>
             </div>
 
@@ -146,7 +146,18 @@
                     <a href="#" class="btn btn-primary">Ver receta</a>
                 </div>
             </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#"><img src="img/past-img/08.jpg" alt="Pastel tropical colombiano"></a>
+                    <h5 class="card-title">Torta Frutos Tropicales</h5>
+                    <p class="card-text">Torta sabor a vainilla, frutos tropicales y
+                        cubierta de chocolate.</p>
+                    <a href="#" class="btn btn-primary">Ver receta</a>
+                </div>
+            </div>
         </div>
+    </div>
     </section>
 
     <!-- Inicio pie de pagina -->

@@ -22,44 +22,46 @@
     <!--Menu-->
     <div id="main-menu">
         <nav class=" navbar navbar-expand-lg navbar-dark bg-menu">
-            <a class="logo" href="index.html"><img src="img/logo.png" alt="Oliva Panadería"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Productos</a>
-                        <div class="color-menu dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="panaderia.html">Panaderia</a>
-                            <a class="dropdown-item" href="pasteleria.html">Pasteleria</a>
-                            <a class="dropdown-item" href="postres.html">Postres</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="detalles.html">Detalles<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactenos.html">Contactenos</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
+            <div class="container">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="Oliva Panadería"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Productos</a>
+                            <div class="color-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item active bg-secondary" href="panaderia.html">Panaderia</a>
+                                <a class="dropdown-item" href="pasteleria.html">Pasteleria</a>
+                                <a class="dropdown-item" href="postres.html">Postres</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="detalles.html">Detalles<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
         </nav>
     </div>
-
+    </div>
     <!--Fin Menu-->
 
     <!--Cuerpo de la pagina-->
@@ -69,7 +71,7 @@
 
     <!--Inicio del contenedor-->
     <section>
-        <div class="boxes-section">
+        <div class="container boxes-section">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <a href="#"><img src="img/pan-img/01.jpg" alt="Pan dulce"></a>
@@ -91,10 +93,11 @@
 
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <a href="#"><img src="img/pan-img/03.jpg" alt="Pan bolillo casero"></a>
+                    <a href="#"><img src="img/pan-img/03.jpg" alt="Pan integral"></a>
                     <h5 class="card-title">Pan bolillo</h5>
                     <p class="card-text">Sorprende a tus seres queridos con esta rica, fácil y efectiva receta de pan
-                        bolillo casero.</p>
+                        bolillo casero.
+                    </p>
                     <a href="#" class="btn btn-primary">Ver receta</a>
                 </div>
             </div>
@@ -104,12 +107,10 @@
                     <a href="#"><img src="img/pan-img/04.jpg" alt="Pan de trigo casero"></a>
                     <h5 class="card-title">Pan de trigo</h5>
                     <p class="card-text">Aprende a preparar un sencillo y rico pan de trigo en casa.</p>
-                    <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">Ver receta</a>
+                    <a href="#" class="btn btn-primary" style="margin-top: 4.8rem;">Ver receta</a>
                 </div>
             </div>
-        </div>
 
-        <div class="boxes-section2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <a href="#"><img src="img/pan-img/05.jpg" alt="Pan de trigo ligeramente dulce"></a>
@@ -147,39 +148,53 @@
                     <a href="#" class="btn btn-primary">Ver receta</a>
                 </div>
             </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#"><img src="img/pan-img/08.jpg" alt="Pan de quesos y semillas"></a>
+                    <h5 class="card-title">Pan de semillas girasol y de sésamo</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver receta</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Fin del contenedor-->
 
-<!-- Inicio pie de pagina -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 d-flex flex-column">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square footer-icon" style="font-size:24px"></i>Facebook</a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square footer-icon" style="font-size:24px"></i>Twitter</a>
-                <a href="https://www.instagram.com/olivabakery_/" target="_blank"><i class="fab fa-instagram footer-icon" style="font-size:24px"></i>Instagram</a>
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square footer-icon" style="font-size:24px"></i>Youtube</a>
-            </div>
+    <!-- Inicio pie de pagina -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 d-flex flex-column">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square footer-icon"
+                            style="font-size:24px"></i>Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square footer-icon"
+                            style="font-size:24px"></i>Twitter</a>
+                    <a href="https://www.instagram.com/olivabakery_/" target="_blank"><i
+                            class="fab fa-instagram footer-icon" style="font-size:24px"></i>Instagram</a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square footer-icon"
+                            style="font-size:24px"></i>Youtube</a>
+                </div>
 
-            <div class="col-sm-4 d-flex flex-column align-items-center">
-                <address>
-                    <h4>Tienda Central</h4>
-                    <p><i class="fas fa-home footer-icon"></i>Bogota - Colombia</p>
-                    <p><i class="fas fa-phone-square-alt footer-icon"></i>+57-310-5000000</p>
-                    <p><i class="material-icons footer-icon">email</i>contacto@olivabakery.com</p>
-                </address>
-            </div>
+                <div class="col-sm-4 d-flex flex-column align-items-center">
+                    <address>
+                        <h4>Tienda Central</h4>
+                        <p><i class="fas fa-home footer-icon"></i>Bogota - Colombia</p>
+                        <p><i class="fas fa-phone-square-alt footer-icon"></i>+57-310-5000000</p>
+                        <p><i class="material-icons footer-icon">email</i>contacto@olivabakery.com</p>
+                    </address>
+                </div>
 
-            <div class="col-sm-4 d-flex flex-column align-items-end">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="#">Terminos y condiciones</a>
-                <a href="contactenos.html">Contactos</a>
-                <a href="contactenos.html">Domicilios</a>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="#">Terminos y condiciones</a>
+                    <a href="contactenos.html">Contactos</a>
+                    <a href="contactenos.html">Domicilios</a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

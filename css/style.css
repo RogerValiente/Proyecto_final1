@@ -43,12 +43,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.boxes-section2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.boxes-section2 img, .boxes-section img {
+.boxes-section img {
   width: 100%;
   height: 200px;
 }
